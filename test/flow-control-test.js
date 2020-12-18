@@ -2,7 +2,7 @@ const expect = require('expect')
 const fs = require('fs')
 const jsdom = require('jsdom')
 const path = require('path')
-const src = path.resolve(__dirname, '..', 'flow-control.js')
+const source = require('flow-control.js')
 
 describe('flow-control', () => {
 
