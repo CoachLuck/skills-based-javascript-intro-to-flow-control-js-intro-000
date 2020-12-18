@@ -7,7 +7,7 @@ describe('flow-control', () => {
 
   before(done => {
     const src = path.resolve(__dirname, '..', 'flow-control.js')
-
+    console.log(src)
     jsdom.env('<div></div>', [src], (err, window) => {
       if (err) {
         return done(err)
@@ -22,7 +22,7 @@ describe('flow-control', () => {
   })
 
   describe('basicTeenager', () => {
-    console.log(src)
+
     it('should return "You are a teenager!" if the age is between 13-19', () => {
       expect(basicTeenager(13)).toEqual("You are a teenager!");
     })
